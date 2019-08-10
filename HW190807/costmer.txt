@@ -1,0 +1,40 @@
+create database HomeWork default character set utf8;
+
+use HomeWork;
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- 資料庫: `HomeWork`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 資料表格式： `costmer`
+--
+
+CREATE TABLE IF NOT EXISTS `costmer` (
+  `cID` varchar(20) NOT NULL,
+  `cName` varchar(20) collate utf8_unicode_ci NOT NULL,
+  `cPW` varchar(20) NOT NULL,
+  PRIMARY KEY  (`cID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- 列出以下資料庫的數據： `costmer`
+--
+
+INSERT INTO `costmer` (`cID`, `cName`,`cPW`) VALUES
+('test001', '測試1號','test001'),
+('test002', '測試2號','test002'),
+
+
+
+

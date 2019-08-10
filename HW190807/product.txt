@@ -1,0 +1,42 @@
+create database HomeWork default character set utf8;
+
+use HomeWork;
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- 資料庫: `HomeWork`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 資料表格式： `product`
+--
+
+CREATE TABLE IF NOT EXISTS `product` (
+  `pID` tinyint(2) unsigned zerofill NOT NULL auto_increment,
+  `pName` varchar(20) collate utf8_unicode_ci NOT NULL,
+  `price` int  NOT NULL,
+  `pic` varchar(250) NOT NULL,
+  PRIMARY KEY  (`pID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- 列出以下資料庫的數據： `product`
+--
+
+INSERT INTO `product` (`pID`, `pName`,`price`, `pic`) VALUES
+(01, 'EXO Tempo','500','Tempo.jpg')
+(02, 'EXO Loveshot','250','Loveshot.jpg'),
+
+
+
+
+
